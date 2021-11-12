@@ -1,0 +1,113 @@
+.tree-graph {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .save-dag-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+  }
+
+  .tooltip-item-box {
+    color: #666;
+    font-size: 12px;
+
+    .tooltip-title {
+      color: #333;
+    }
+
+    .tooltip-item {
+      padding-bottom: 8px;
+    }
+
+    .tooltip-item:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .g6-component-contextmenu {
+    padding: 0;
+  }
+
+  .graph-menu {
+    width: 80px;
+
+    .graph-menu-item {
+      height: 28px;
+      padding: 0 8px;
+      overflow: hidden;
+      line-height: 28px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      cursor: pointer;
+
+      &:hover {
+        color: #1890ff;
+      }
+    }
+  }
+
+  .graph-btns {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background: #fff;
+    box-shadow: 0 1px 2px -2px #00000029, 0 3px 6px #0000001f, 0 5px 12px 4px #00000017;
+  }
+
+  .graph-btns-item {
+    margin: 0 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .save-btn {
+    font-size: 18px;
+  }
+
+  .g6-tooltip {
+    padding: 2px 8px;
+    color: #fff;
+    font-size: 12px;
+    text-align: left;
+    background-color: #000;
+    border-radius: 6px;
+  }
+
+  #treeGraph {
+    background: #fff;
+  }
+
+  #treeGraph,
+  .ant-spin-nested-loading,
+  .ant-spin-container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.tree-full-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 990;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
